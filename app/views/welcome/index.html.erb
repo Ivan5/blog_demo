@@ -1,0 +1,20 @@
+<div class="wrapper wrapper_padding clearix">
+		<div class="col-1 about homepage_content">
+			<h2>About</h2>
+			<hr>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus consequuntur eum commodi nulla enim facere ad accusantium? <a href="">Twitter</a> </p>
+			<p>Recusandae qui sapiente quod, quidem blanditiis tenetur eum consequatur culpa, molestiae dolores natus!</p>
+			
+		</div>
+		<div class="col-2 homepage_content">
+			<%= image_tag "1.jpg" %>
+		</div>
+		<div class="col-3 homepage_content">
+			<h2>Blog</h2>
+			<hr>
+			<% @posts.each do |post| %>
+				<h3><a href=""><%= link_to post.title, post %></a></h3>
+				<p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+			<% end %>
+		</div>
+</div>

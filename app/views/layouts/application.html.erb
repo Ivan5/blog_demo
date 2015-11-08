@@ -12,7 +12,7 @@
 </head>
 <body>
 	<header id="main_navigation" class="clearfix">
-		<a href="" class="name">Ivan Jaramillo</a>
+		<%= link_to "Ivan Jaramillo", root_path, class: "name" %>
 		<nav>
 			<%= link_to "Articles", posts_path %>
 			<a href="">Projects</a>
@@ -20,7 +20,21 @@
 		</nav>
 	</header>
 
-<%= yield %>
+	<%= yield %>
+
+	<footer id="main_footer">
+		<p class="copyright">&copy; 2015 Ivan Jaramillo</p>
+		<nav>
+			<a href="https://twitter.com/Ivanciito_JF" target="_blank"><i class="fa fa-twitter"></i></a>
+			<a href="https://www.facebook.com/IvanciitoJF" target="_blank"><i class="fa fa-facebook"></i></i></a>
+			<a href="https://instagram.com/ivanciito5/" target="_blank"><i class="fa fa-instagram"></i></a>
+			<a href="https://es.foursquare.com/ivanciito_jf" target="_blank"><i class="fa fa-foursquare"></i></a>
+			<a href="https://github.com/Ivan5" target="_blank"><i class="fa fa-github"></i></a>
+			<a href="https://mx.linkedin.com/in/ivanjaramillof" target="_blank"><i class="fa fa-linkedin"></i></a>
+			<a href="https://standardresume.co/IvanJaramillo" target="_blank"><i class="fa fa-dribbble"></i></a>
+
+		</nav>
+	</footer>
 
 </body>
 </html>
