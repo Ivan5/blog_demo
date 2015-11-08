@@ -5,7 +5,7 @@
 		<hr>
 	</header>
 	<div id="content">
-		<%= @post.content%>
+		<%= simple_format @post.content%>
 	</div>
 
 	<hr>
@@ -28,3 +28,5 @@
 	<hr>
 
 </div>
+
+<%= link_to "Edit", edit_post_path(@post) %>
