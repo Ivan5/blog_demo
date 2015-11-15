@@ -52,6 +52,7 @@ end
 group :production do
 	gem 'pg'
 	gem 'rails_12factor'
+	gem 'redcarpet', '~> 3.2.3'
 end
 
 
